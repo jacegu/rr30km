@@ -1,8 +1,4 @@
 require_relative 'fizzbuzz'
-require_relative 'prettify_output'
-
-
-# parte 1
 
 class FizzBuzzArray
   def initialize(range)
@@ -29,9 +25,7 @@ class FizzBuzzArray
   end
 end
 
-
-print_header_for_exercise 1
-array =  FizzBuzzArray.new(106..114)
+array = FizzBuzzArray.new(106..114)
 puts array.to_a.to_s
 puts '--'
 puts array.has_fizz?
