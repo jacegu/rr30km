@@ -23,7 +23,7 @@ Escribir una función que se llame `fizzbuzz_value`, que reciba un número enter
 
 **Parte 2**
 
-Pedir un número por pantalla y, utilizando la función que acabamos de escribir, imprimir un mensaje que diga *El valor fizbuzz para el <número> es <valor fizzbuzz>*
+Pedir un número por pantalla y, utilizando la función que acabamos de escribir, imprimir un mensaje que diga *El valor fizbuzz para el /número/ es /valor fizzbuzz/*
 
 
 **Parte 3**
