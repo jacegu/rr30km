@@ -94,3 +94,25 @@ Ejercicio 6
 2. El constructor calculará la equivalencia de cada entero del array y la almacenará en un hash de la forma `{ entero => equivalencia }`.
 2. Definir un método `value_for` que reciba un número entero como parámetro. Este método comprobará si ya se ha calculado la equivalencia para el número (mirando si aparece en el hash). Si ya se ha calculado, devolverá el resultado almacenado. Sino, lo calculará, y lo almacenará en el hash para futuras consultas.
 
+
+Ejercicio 7
+-----------
+
+Definir un método de clase `initialized_with` en `FizzBuzzCalculator` que se encargue de crear una nueva instancia de la clase.
+
+
+Ejercicio 8
+-----------
+
+**Parte 1**
+Repite la parte 1, 2 y 3 del ejercicio 3 utilizando iteradores `each` (o similares) en vez de los `for`, `while` o `until` que hayas utilizado.
+
+
+**Parte 2**
+1. Utiliza el método `map` de la clase `Array` para, partiendo de un array de enteros, generar un array con el valor fizzbuzz de cada número.
+2. Sobre el resultado de ejecutar `map` en el punto anterior, llama al método `select` para quedarte con aquellas equivalencias que no sean ni *fizz* ni *buzz* ni *fizzbuzz*.
+
+
+**Parte 3**
+1. Crea una función que se llame `fizzbuzz_proc` que devuelva un bloque que reciba un parámetro. Dicho bloque contendrá la lógica para calcular el valor fizzbuzz del parámetro que le pasen.
+2. Crea un hash invocando a `Hash.new` y pásale como argumento el resultado de invocar a `fizzbuzz_proc` (recuerda que, al ser un bloque, tendrás que  prefijarlo con `&`). Prueva a pedirle cualquier clave al hash que acabas de construir. ¿Qué ocurre?
