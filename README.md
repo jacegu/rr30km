@@ -115,5 +115,10 @@ Repite la parte 1, 2 y 3 del ejercicio 3 utilizando iteradores `each` (o similar
 
 **Parte 3**
 
-1. Crea una función que se llame `fizzbuzz_proc` que devuelva un bloque que reciba un parámetro. Dicho bloque contendrá la lógica para calcular el valor fizzbuzz del parámetro que le pasen.
-2. Crea un hash invocando a `Hash.new` y pásale como argumento el resultado de invocar a `fizzbuzz_proc` (recuerda que, al ser un bloque, tendrás que  prefijarlo con `&`). Prueva a pedirle cualquier clave al hash que acabas de construir. ¿Qué ocurre?
+1. Crea un bloque que reciba dos  parámetros: `hash` y `key`. Dicho bloque se encargará de almacenar en el hash que recibe como parámetro y con la clave que le pasen el valor fizzbuzz de dicha clave:
+
+    lambda { |hash, key| hash[key] = fizzbuzz_value(key) }
+
+2. Asigna este bloque a una variable.
+
+3. Crea un hash invocando a `Hash.new` y pásale como argumento el bloque que acabamos de definr (recuerda que, al ser un bloque, tendrás que  prefijarlo con `&`). Prueva a pedirle cualquier clave al hash que acabas de construir. ¿Qué ocurre? Imprime el hash por pantalla después de pedirle cada clave para comprobar su estado interno.
