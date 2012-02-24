@@ -117,7 +117,7 @@ Repite la parte 1, 2 y 3 del ejercicio 3 utilizando iteradores `each` (o similar
 
 1. Crea un bloque que reciba dos  parámetros: `hash` y `key`. Dicho bloque se encargará de almacenar en el hash que recibe como parámetro y con la clave que le pasen el valor fizzbuzz de dicha clave:
 
-    lambda { |hash, key| hash[key] = fizzbuzz_value(key) }
+    `lambda { |hash, key| hash[key] = fizzbuzz_value(key) }`
 
 
 2. Asigna este bloque a una variable.
