@@ -91,7 +91,7 @@ Ejercicio 6
 
 1. Definir una clase `FizzBuzzCalculator` cuyo constructor reciba un array de enteros.
 2. El constructor calculará la equivalencia de cada entero del array y la almacenará en un hash de la forma `{ entero => equivalencia }`.
-2. Definir un método `value_for` que reciba un número entero como parámetro. Este método comprobará si ya se ha calculado la equivalencia para el número (mirando si aparece en el hash). Si ya se ha calculado, devolverá el resultado almacenado. Sino, lo calculará, y lo almacenará en el hash para futuras consultas.
+2. Definir un método `value_for` que reciba un número entero como parámetro. Este método comprobará si ya se ha calculado la equivalencia para el número (mirando si aparece en el hash). Si ya se ha calculado, devolverá el resultado almacenado. Sino, lo calculará, y lo almacenará en el hash para futuras consultas. Al invocar al método se deberá imprimir por pantalla si el resultado se está obteniendo de la cache de resultados o si se está calculando.
 
 
 Ejercicio 7
